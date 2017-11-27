@@ -53,6 +53,8 @@ find_package(Eigen REQUIRED)
 set(ADDITIONAL_INCLUDE_DIRS ${EIGEN_INCLUDE_DIRS} ${EIGEN_INCLUDE_DIR}/unsupported)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
 set( OPENGV_SOURCE_FILES
   src/absolute_pose/modules/main.cpp
   src/absolute_pose/modules/gp3p/code.cpp

@@ -30,6 +30,8 @@
 
 //Note: has been derived from ROS
 
+#include <functional>
+
 template<typename M>
 opengv::sac::SampleConsensusProblem<M>::SampleConsensusProblem(
     bool randomSeed) :
